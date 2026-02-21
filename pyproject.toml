@@ -1,0 +1,24 @@
+[project]
+name = "a-triade-21"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anwar Hermuche",email = "anwarhermuche2@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0.0"
+dependencies = [
+    "pandas (>=3.0.1,<4.0.0)",
+    "yfinance (>=1.2.0,<2.0.0)",
+    "langchain-openai (>=1.1.10,<2.0.0)",
+    "langchain-groq (>=1.1.2,<2.0.0)",
+    "fastapi[standard] (>=0.129.2,<0.130.0)"
+]
+
+[tool.poetry]
+packages = [{include = "a_triade_21", from = "."}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
